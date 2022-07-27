@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+main {
+    display: flex;
+}
+
+
+#left-container {
+    background-color: #C7E7FF;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#left-container h1 {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 4rem;
+}
+
+#left-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+}
+
+.icon {
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+
+#right-container {
+    background-color: #0C132B;
+    width: 50vw;
+    height: 100vh;
+    color: white;
+}
+
+#right-container h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.projects {
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 75vh;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.project-container {
+    border: white solid 2px;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.project-container h3 {
+    font-size: 1.5rem;
+}
+
+.live-site-btn,
+.view-code-btn {
+    margin: 25px 5px;
+    min-width: 5vw;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
