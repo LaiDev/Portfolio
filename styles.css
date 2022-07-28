@@ -11,12 +11,14 @@ main {
 
 #left-container {
     background-color: #C7E7FF;
+    color: rgb(71, 71, 68);
     width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    line-height: 1rem;
 }
 
 #left-container h1 {
@@ -25,7 +27,6 @@ main {
 }
 
 #left-container h2 {
-    font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
 }
 
@@ -33,6 +34,20 @@ main {
     margin: 15px;
     width: 30px;
     height: 30px;
+}
+
+
+.connect-btn {
+    background-color: #0C132B;
+    color: white;
+    padding: 1rem;
+    min-width: 10vw;
+    margin: 1rem;
+}
+
+.connect-btn:hover
+{
+    background-color: rgb(71, 71, 68);;
 }
 
 
@@ -76,9 +91,16 @@ main {
 }
 
 .live-site-btn,
-.view-code-btn {
-    margin: 25px 5px;
-    min-width: 5vw;
+.view-code-btn,
+.connect-btn {
+    border: none;
     border-radius: 10px;
     font-size: 1.1rem;
 }
+
+.live-site-btn,
+.view-code-btn {
+    margin: 25px 5px;
+    min-width: 5vw;
+}
+
