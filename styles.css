@@ -45,11 +45,36 @@ main {
     margin: 1rem;
 }
 
-.connect-btn:hover
-{
-    background-color: rgb(71, 71, 68);;
+
+.connect-btn:hover {
+    background-color: rgb(71, 71, 68);
 }
 
+.live-site-btn,
+.view-code-btn,
+.connect-btn {
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.live-site-btn,
+.view-code-btn {
+    margin: 25px 5px;
+    max-width: 10vw;
+    color: black;
+    background-color: white;
+    padding: .25rem;
+}
+
+.live-site-btn:hover,
+.view-code-btn:hover {
+    background-color: #C7E7FF;
+    ;
+
+}
 
 #right-container {
     background-color: #0C132B;
@@ -90,17 +115,17 @@ main {
     font-size: 1.5rem;
 }
 
-.live-site-btn,
-.view-code-btn,
-.connect-btn {
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
 
-.live-site-btn,
-.view-code-btn {
-    margin: 25px 5px;
-    min-width: 5vw;
+.icon:hover {
+    text-decoration: underline;
+    text-decoration-style: dashed;
 }
-
