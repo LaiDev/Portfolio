@@ -30,12 +30,6 @@ main {
     font-size: 3.5rem;
 }
 
-.icon {
-    margin: 15px;
-    width: 30px;
-    height: 30px;
-}
-
 
 .connect-btn {
     background-color: #0C132B;
@@ -146,6 +140,14 @@ footer {
     border-radius: 2rem;
 }
 
+.icon {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+
+
 .icon:hover {
     text-decoration: underline;
     text-decoration-style: dashed;
@@ -230,6 +232,13 @@ footer {
         line-height: normal;
         height: fit-content;
     }
+
+    .icon {
+        width: 15px;
+        height: 15px;
+    }
+    
+    
 }
 
 @media (max-width:615px) {
