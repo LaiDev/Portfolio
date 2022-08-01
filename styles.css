@@ -13,7 +13,6 @@ main {
     background-color: #C7E7FF;
     color: rgb(71, 71, 68);
     width: 50vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +23,7 @@ main {
 #left-container h1 {
     font-family: 'Mochiy Pop One', sans-serif;
     font-size: 4rem;
+    text-align: center;
 }
 
 #left-container h2 {
@@ -62,18 +62,33 @@ main {
 
 .live-site-btn,
 .view-code-btn {
-    margin: 25px 5px;
-    max-width: 10vw;
+
+
     color: black;
     background-color: white;
-    padding: .25rem;
+    padding: .25rem 1rem;
+}
+
+.view-code-btn {
+    max-width: 20vw;
+}
+
+.live-site-btn {
+    max-width: 20vw;
 }
 
 .live-site-btn:hover,
 .view-code-btn:hover {
     background-color: #C7E7FF;
-    ;
 
+}
+
+.btn-holder {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 #right-container {
@@ -92,7 +107,7 @@ main {
 
     display: flex;
     flex-wrap: wrap;
-    height: 75vh;
+    height: fit-content;
     gap: 30px;
     align-content: center;
     justify-content: center;
@@ -103,29 +118,140 @@ main {
     border: white solid 2px;
     display: flex;
     flex-direction: column;
-    width: 20vw;
-    height: 30vh;
+    min-width: 20vw;
+    min-height: 30vh;
     border-radius: 1rem;
     align-items: center;
     justify-content: center;
-
+    text-align: center;
 }
 
 .project-container h3 {
     font-size: 1.5rem;
 }
 
+.project-container p {
+    width: 80%;
+}
 
 
 footer {
     position: fixed;
     bottom: 0;
-    width: 50%;
+    width: auto;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 2rem;
 }
 
 .icon:hover {
     text-decoration: underline;
     text-decoration-style: dashed;
+}
+
+
+@media (max-width: 1420px) {
+
+    #left-container {
+        line-height: normal;
+        height: auto;
+    }
+
+
+
+
+}
+
+@media (max-width: 1300px) {
+
+
+    .projects {
+        
+        flex-direction: column;
+
+    }
+
+    .btn-holder {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    #right-container
+    {
+        height: auto;
+    }
+
+    .project-container
+    {
+        height: fit-content;
+        width: fit-content;
+    }
+
+  
+
+}
+
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+    }
+
+    #left-container {
+        width: auto;
+        height: 50vh;
+        line-height: 1rem;
+    }
+
+    .connect-btn {
+        width: 20vw;
+    }
+
+    #right-container {
+        width: auto;
+    }
+
+    .project-container {
+        min-width: 35vw;
+    }
+}
+
+@media (max-width: 840px) {
+
+    .live-site-btn,
+    .view-code-btn {
+        font-size: .90rem;
+    }
+}
+
+@media (max-width: 715px) {
+    #left-container {
+        line-height: normal;
+        height: fit-content;
+    }
+}
+
+@media (max-width:615px) {
+
+    .live-site-btn,
+    .view-code-btn {
+        height: fit-content;
+        width: fit-content;
+    }
+}
+
+@media (max-width:390px) {
+
+    
+    #left-container h2 {
+        text-align: center;
+    }
+
+    .connect-btn
+    {
+        height: fit-content;
+        width: fit-content;
+    }
+    
 }
